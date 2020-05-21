@@ -10,10 +10,10 @@
   <body>
 <!-- create container for all content -->
     <article class="container">
-      <h1 class="title">Password Generator</h1>
-      <h3 class="display" id="display">Your Secure Password</h3>
+      <h1>Password Generator</h1>
+      <h4 class="display" id="displayBox">Your Secure Password</h4>
 <!-- start form, num of chars, uppercse, lowercase, numbers, symbols -->
-      <form id="form" class="form">
+      <form id="inputForm" class="form">
         
         <label for="characters">Number Of Characters</label>
         <input class="number-input" type="number" min="8" max="128" value="12" id="characters">
@@ -33,6 +33,7 @@
         <button type="submit" class="btn">Generate Password</button>
       </form>
     </article>
+
     <script src="script.js"></script>
   </body>
 </html>
