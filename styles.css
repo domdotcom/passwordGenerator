@@ -76,7 +76,12 @@ body {
   }
 
   .container{
-    width:75%;
+    width:85%;
+  }
+  
+  h1{
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
