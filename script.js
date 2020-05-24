@@ -9,12 +9,14 @@ const display = document.getElementById('displayBox')
 
 // form listening event
 formElement.addEventListener('submit', e => {
+    e.preventDefault()
     const length = lengthElement.value
     const uppercase = uppercaseElement.checked
     const lowercase = lowercaseElement.checked
     const numbers = numberElement.checked
-    const symbols = symbolsElement.checked
+    const symbols = symbolElement.checked
     const password = generatePassword(length, uppercase, lowercase, symbols, numbers)
+    display.innerHTML = password
 })
 // char code variables
 const lowerCharCodes = arrayCharCodes(65,90)
@@ -34,7 +36,7 @@ function arrayCharCodes(min,max){
     }
     return array
 }
-// password genertor function
+// password generator function
 
 function generatePassword(length, uppercase, lowercase, symbols, numbers){
     let charCodes = lowerCharCodes
