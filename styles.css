@@ -75,13 +75,13 @@ body {
     padding: 10px 15px;
   }
 
-  #password {
-    font-size: 1rem;
+  .container{
+    width:75%;
   }
 }
 
 @media (max-width: 500px) {
   .btn {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }
